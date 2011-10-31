@@ -1,0 +1,197 @@
+/**
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details. You should have
+ * received a copy of the GNU General Public License along with
+ * this program.
+ *
+ *
+ *
+ * @package		PHP-HTML5-OOP
+ * @contents	Standard Library Starts here
+ * @copyright	2011, Cee Emm Infotech, All Rights Reserved.
+ * @author		Vineet Gupta <vineetgupta22@gmail.com>
+ *
+ */
+
+
+
+	Meta Tags are most important factor for SEO, thus a special care it given to
+	Meta Tags. In meta tags, I have add the valid meta tags and avoided un-valid
+	tags.
+
+	The contexts in which meta tags can be used :
+		1. charset
+		2. name
+		3. http-equiv
+
+	Rules:
+		If "name" or "http-equiv" are defined then content must be defined.
+
+	Rule Implimentation that sending the name and content to meta tag. If the meta tag
+	is valid and included in our list then it would be included or excluded.
+
+	<meta name='' content=''>
+
+	name list of Valid Meta Tags
+
+		Defined by HTML5 Documentation
+			1. application-name
+			2. autor
+			3. description
+			4. generator
+			5. keywords
+
+		Site verification
+			1. alexaverifyid
+			2. google-site-verification
+			3. norton-safeweb-site-verification
+			4. verify-v1
+			5. y_key
+			6. yandex-verification
+			7. wot-verification
+			8. blogcatalog
+			9. nibbler-site-verification
+
+		Dublin Core Metadata Initiative
+			1. dc.date.issued
+			2. dcterms.abstract
+			3. dcterms.accessRights
+			4. dcterms.accrualMethod
+			5. dcterms.accrualPeriodicity
+			6. dcterms.accrualPolicy
+			7. dcterms.alternative
+			8. dcterms.audience
+			9. dcterms.available
+			10. dcterms.bibliographicCitation
+			11. dcterms.conformsTo
+			12. dcterms.contributor
+			13. dcterms.coverage
+			14. dcterms.created
+			15. dcterms.creator
+			16. dcterms.date
+			17. dcterms.dateAccepted
+			18. dcterms.dateCopyrighted
+			19. dcterms.dateSubmitted
+			20. dcterms.description
+			21. dcterms.educationLevel
+			22. dcterms.extent
+			23. dcterms.format
+			24. dcterms.hasFormat
+			25. dcterms.hasPart
+			26. dcterms.hasVersion
+			27. dcterms.identifier
+			28. dcterms.instructionalMethod
+			29. dcterms.isFormatOf
+			30. dcterms.isPartOf
+			31. dcterms.isReferencedBy
+			32. dcterms.isReplacedBy
+			33. dcterms.isRequiredBy
+			34. dcterms.issued
+			35. dcterms.isVersionOf
+			36. dcterms.language
+			37. dc.language
+			38. dcterms.license
+			39. dcterms.mediator
+			40. dcterms.medium
+			41. dcterms.modified
+			42. dcterms.provenance
+			43. dcterms.publisher
+			44. dcterms.references
+			45. dcterms.relation
+			46. dcterms.replaces
+			47. dcterms.requires
+			48. dcterms.rights
+			49. dcterms.rightsHolder
+			50. dcterms.source
+			51. dcterms.spatial
+			52. dcterms.subject
+			53. dcterms.tableOfContents
+			54. dcterms.temporal
+			55. dcterms.title
+			56. dcterms.type
+			57. dcterms.valid
+
+		Webtrends Parameter
+			1. wt.cg_n
+			2. wt.cg_s
+			3. wt.ac
+			4. wt.ad
+			5. wt.mc_id
+			6. wt.sv
+			7. wt.ti
+
+		Globrix meta tags
+			1. globrix.instruction
+			2. globrix.price
+			3. globrix.postcode
+			4. globrix.bedrooms
+			5. globrix.bathrooms
+			6. globrix.type
+			7. globrix.condition
+			8. globrix.features
+			9. globrix.outsidespace
+			10. globrix.parking
+			11. globrix.period
+			12. globrix.poa	
+			13. globrix.tenure
+			14. globrix.underoffer
+			15. globrix.priceproximity
+			16. globrix.latitude
+			17. globrix.longitude
+
+		Facebook Developers
+			1. og:title
+			2. og:type
+			3. og:url
+			4. og:image
+			5. og:site_name
+			6. fb:admins
+			7. og:description
+			8. fb:page_id
+
+		Geo Location
+			1. geo.country
+			2. geo.placename
+			3. geo.position
+			4. geo.region
+
+		"Jump List" or "Pinned Sites" in Windows 7
+			1. msapplication-task
+			2. msapplication-starturl
+			3. msapplication-tooltip
+			4. msapplication-navbutton-color
+			5. msvalidate.01
+
+		Robots/Bots
+			1. baiduspider
+			2. googlebot
+			3. robots
+			4. publisher
+			5. slurp
+			6. teoma
+
+		Apple
+			1. apple-mobile-web-app-capable
+			2. apple-mobile-web-app-status-bar-style
+
+		Ruby on Rails
+			csrf-param
+			csrf-token
+
+		Others
+			1. rating
+			2. referrer
+			3. rights-standard
+			4. startIndex
+			5. totalResults
+			6. viewport
+			7. designer
+			8. review_date
+			8. es.title
+			9. format-detection
